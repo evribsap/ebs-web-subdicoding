@@ -3,9 +3,20 @@
 /* Main CSS */
 
 @media screen and (max-width: 1000px) {
+   #content,
    aside {
        width: 100%;
        padding: 0;
+   }
+
+   .main-card{
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+   }
+  
+  .image{
+      width: 100%;
    }
 }
 
@@ -43,15 +54,6 @@ nav {
    top: 0;
 }
 
-nav li, a, button {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 500;
-   font-size: 18px;
-   color: black;
-   text-decoration: none;
-   text-transform: uppercase;
-}
-
 .logo {
    cursor: pointer;
    height: 45px;
@@ -69,6 +71,9 @@ nav li, a, button {
 .nav__link li a {
    transition: all 0.3s ease 0s;
    font-size: 18px;
+   color: black;
+   text-decoration: none;
+   text-transform: uppercase;
 }
 
 .nav__link li a:hover{
@@ -76,6 +81,8 @@ nav li, a, button {
 }
 
 nav button {
+   font-size: 18px;
+   text-transform: uppercase;
    padding: 9px 25px;
    background-color: #f4511e;
    border: none;
@@ -93,40 +100,39 @@ nav button:hover {
 /* Main Content */
 main {
    padding: 20px;
-   
+   overflow: auto;
 }
 
-.articel-card {
-   position: absolute;
-   height: 370px;
+#content {
+   float: left;
    width: 75%;
-   margin: auto;
+}
+
+.main-card {
+   padding: 35px;
+   display: flex;
+   margin-top: 20px;
    border-radius: 10px;
    background: white;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
- 
- .inner-part {
-   position: absolute;
-   display: flex;
-   height: 360px;
-   align-items: center;
-   justify-content: center;
-   padding: 35px;
- }
 
- .img-1 {
-   height: 300px;
+ .image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
    border-radius: 10px;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
   
- .content {
-   padding: 0 20px 0 35px;
-   margin-left: 20px;
+ .article-content {
+   padding: 10px 20px 10px 20px;
+   margin: 10px;
+   width: 100%;
  }
 
- .content span {
+ .article-content span {
    display: block;
    color: #7b7992;
    margin-bottom: 15px;
@@ -134,14 +140,14 @@ main {
    font-weight: 500;
  }
 
- .content .title {
+ .article-content .title {
    font-size: 25px;
    font-weight: 500;
    color: #0d0925;
    margin-bottom: 20px;
  }
 
- .content .text {
+ .article-content .text {
    color: #4e4a67;
    font-size: 18px;
    margin-bottom: 30px;
@@ -149,7 +155,7 @@ main {
    text-align: justify;
  }
 
- .content button {
+ .article-content button {
    display: inline-flex;
    padding: 10px 10px;
    border: none;
@@ -163,7 +169,7 @@ main {
    background: #fe8a39;
  }
 
- .content button:hover {
+ .article-content button:hover {
    background: #fd1c1c;
  }
 /* End Main Content */
@@ -178,36 +184,65 @@ footer {
 /* Footer */
 
 /* Profile */
+
 aside {
    float: right;
    width: 25%;
    padding-left: 20px;
  }
 
+.profile-card {
+   margin-top: 20px;
+   border-radius: 10px;
+   background: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ }
+
 .profile header {
+   padding: 10px;
    text-align: center;
 }
 
-.profile h2 {
+.profile-name h2 {
    font-size: 20px;
 }
 
-.profile h3 {
+.profile-text h3 {
+   text-align: center;
    font-size: 18px;
 }
 
-.profile th, td,  a {
-   font-size: 13px;
+.profile-text table {
+   padding: 20px;
+   text-align: justify;
+}
+
+.profile-text th{
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.profile-text td{
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.profile-text a{
+   font-size: 15px;
+   font-weight: bold;
 }
 
 .profile img {
-   width: 200px;
+   width: 250px;
+   display: block;
+   margin-top: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
 }
-
 /* End Profile */
 
 /* Article CSS */
-
 .card-content-article {
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    border-radius: 20px;
@@ -274,5 +309,4 @@ aside {
  .btn-read-more:hover {opacity: 0.6}
 
  #more {display: none;}
-
  /* End Article CSS */
