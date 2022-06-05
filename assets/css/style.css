@@ -28,6 +28,7 @@
 
 body {
    font-family: 'Montserrat', sans-serif;
+   background-color: #D0C9C0;
 }
 
 /* Header */
@@ -38,7 +39,7 @@ header {
 .jumbotron {
    font-size: 20px;
    padding: 60px;
-   background-color: #00c8eb;
+   background-color: #5F7161;
    text-align: center;
    color: white;
 }
@@ -48,7 +49,7 @@ nav {
    justify-content: space-between;
    align-items: center;
    padding: 30px 10%;
-   background-color: #00a2c6;
+   background-color: #6D8B74;
    height: 50px;
    position: sticky;
    top: 0;
@@ -83,8 +84,8 @@ nav {
 nav button {
    font-size: 18px;
    text-transform: uppercase;
-   padding: 9px 25px;
-   background-color: #f4511e;
+   padding: 10px;
+   background-color: #5F7161;
    border: none;
    border-radius: 5px;
    cursor: pointer;
@@ -92,7 +93,7 @@ nav button {
 }
 
 nav button:hover {
-   background-color: #f4511e;
+   background-color: #8ea391;
    color: #fff;
 }
 /* End Header */
@@ -112,8 +113,9 @@ main {
    padding: 35px;
    display: flex;
    margin-top: 20px;
+   margin-bottom: 20px;
    border-radius: 10px;
-   background: white;
+   background: #EFEAD8;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
 
@@ -161,16 +163,16 @@ main {
    border: none;
    font-size: 15px;
    text-transform: uppercase;
-   color: #fff0e6;
+   color: black;
    font-weight: 500;
    border-radius: 5px;
    cursor: pointer;
    outline: none;
-   background: #fe8a39;
+   background: #6D8B74;
  }
 
  .article-content button:hover {
-   background: #fd1c1c;
+   opacity: 0.8
  }
 /* End Main Content */
 
@@ -178,7 +180,7 @@ main {
 footer {
    padding: 20px;
    color: black;
-   background-color: #00a2c6;
+   background-color: #6D8B74;
    text-align: center;
 }
 /* Footer */
@@ -194,7 +196,7 @@ aside {
 .profile-card {
    margin-top: 20px;
    border-radius: 10px;
-   background: white;
+   background: #EFEAD8;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  }
 
@@ -232,7 +234,7 @@ aside {
    font-weight: bold;
 }
 
-.profile img {
+.profile-name img {
    width: 250px;
    display: block;
    margin-top: 15px;
@@ -293,10 +295,10 @@ aside {
 }
  
 .btn-read-more {
-   background-color: #f4511e;
+   background-color: #6D8B74;
    border: none;
    border-radius: 5px;
-   color: white;
+   color: black;
    padding: 16px;
    text-align: center;
    font-size: 16px;
@@ -304,9 +306,10 @@ aside {
    margin-bottom: 20px;
    opacity: 1;
    transition: 0.3s;
+   text-transform: uppercase;
  }
  
- .btn-read-more:hover {opacity: 0.6}
+ .btn-read-more:hover {opacity: 0.8}
 
  #more {display: none;}
  /* End Article CSS */
