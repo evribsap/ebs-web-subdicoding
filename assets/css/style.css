@@ -18,11 +18,12 @@ header {
 }
 
 .jumbotron {
-   font-size: 20px;
-   padding: 60px;
-   background-color: #5F7161;
+   font-size: 40px;
+   padding: 30px;
    text-align: center;
    color: white;
+   background-image: url('../img/header.jpg');
+   background-size: cover;
 }
 
 nav {
@@ -31,7 +32,7 @@ nav {
    align-items: center;
    padding: 30px 10%;
    background-color: #6D8B74;
-   height: 50px;
+   height: 70px;
    position: sticky;
    top: 0;
 }
