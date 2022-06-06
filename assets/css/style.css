@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* Main CSS */
-
-@media screen and (max-width: 1000px) {
-   #content,
-   aside {
-       width: 100%;
-       padding: 0;
-   }
-
-   .main-card{
-      flex-direction: column;
-   }
-}
-
 * {
    box-sizing: border-box;
  }
@@ -308,3 +295,19 @@ aside header {
 
  #more {display: none;}
  /* End Article CSS */
+
+ @media screen and (max-width: 1280px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+
+   .main-card{
+      flex-direction: column;
+   }
+
+   nav button {
+      width: auto;
+   }
+}
