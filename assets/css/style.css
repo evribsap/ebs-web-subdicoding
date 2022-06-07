@@ -19,11 +19,12 @@ header {
 
 .jumbotron {
    font-size: 40px;
-   padding: 30px;
+   padding: 50px;
    text-align: center;
    color: white;
    background-image: url('../img/header.jpg');
    background-size: cover;
+   background-position: center;
 }
 
 nav {
