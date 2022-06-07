@@ -312,4 +312,9 @@ aside header {
    nav button {
       width: auto;
    }
+
+   .article-content {
+      margin: auto;
+      padding-top: 25px;
+    }
 }
